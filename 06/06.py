@@ -43,7 +43,6 @@ def solve2(data, days=256):
         for i in range(9):
             if i == 0:
                 tmp = fish_states[0]
-                # tmp[1] += fish_states[0]
             else:
                 fish_states[i - 1] = fish_states[i]
         fish_states[8] = tmp
