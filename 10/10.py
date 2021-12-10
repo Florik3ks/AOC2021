@@ -26,7 +26,6 @@ def solve2(data):
     d = {"open" : ["[","(","{","<"],
          "close": ["]",")","}",">"]}
     nums = {")": 1, "]": 2, "}":3,">":4}
-    count = 0
     scores = []
     for line in data:
         brackets = []
