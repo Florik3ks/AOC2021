@@ -34,7 +34,7 @@ def solve(data):
             positions.append(p)
     
     print_grid(positions)
-    return 
+    return d1
 
 def get_new_val(p, axis, val):
     val = int(val)
