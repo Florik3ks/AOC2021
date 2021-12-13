@@ -1,5 +1,4 @@
 def solve(data):
-    grid = []
     positions = []
     instructions = []
     for line in data:
