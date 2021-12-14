@@ -31,28 +31,6 @@ def solve(data):
 
 def solve2(data):
     start = data[0].strip()
-    instructions = []
-    replacements = {}
-    for l in range(2, len(data)):
-        line = data[l].strip()
-        old, new = line.split(" -> ")
-        instructions.append((old, new))
-        replacements[old] = old[0] + new
-    replacer = replacements.get
-    for _ in range(40):
-
-        values = list(generate_multiple_sets_of_two(start))
-        start = ''.join([replacer(n, n) for n in values]) + start[len(start) - 1]
-      
-    minval = 2 ** 31 - 1
-    maxval = 0
-    for v in Counter(start).values():
-        minval = min(minval, v)
-        maxval = max(maxval, v)
-    return maxval - minval
-
-def solve2(data):
-    start = data[0].strip()
     instructions = {}
     quantities = defaultdict(int)
     for l in range(2, len(data)):
