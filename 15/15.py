@@ -99,11 +99,11 @@ def get_bigger_data(data):
 if __name__ == "__main__":
     with open("15/input.txt", "r") as f:
         data = f.readlines()
-        #d1 ~ 0.5s
+        #d1 ~ 0.2s
         start_time = time.process_time()
         print(solve(data))
         print(f"{time.process_time() - start_time}s elapsed")
-        #d2 ~ 19.5s: room for improvement
+        #d2 ~ 10.5s
         data = get_bigger_data(data)
         start_time = time.process_time()
         print(solve(data))
