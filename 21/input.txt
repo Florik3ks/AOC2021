@@ -1,0 +1,5 @@
+Player 1 starting position: 2
+Player 2 starting position: 10
+
+input: 2 10
+ex: 4 8
